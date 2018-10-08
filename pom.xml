@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.wangang</groupId>
+	<artifactId>egg-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>egg 基于 maven 、spring boot 、 spring 、mybatis</name>
+	<modules>
+		<module>egg-core</module>
+		<module>egg-admin</module>
+	</modules>
+
+	<!-- spring boot parent 依赖 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.1.RELEASE</version>
+	</parent>
+
+	<properties>
+		<!-- 通用配置 -->
+		<spring.boot.version>2.0.1.RELEASE</spring.boot.version>
+		<eggs.version>1.0.0</eggs.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<fastjson.version>1.2.47</fastjson.version>
+		<!-- 模板引擎 -->
+		<velocity.version>1.7</velocity.version>
+		<beetl.version>2.8.5</beetl.version>
+		<!-- 数据库、连接池、缓存依赖 -->
+		<mysql-connector-java.version>8.0.11</mysql-connector-java.version>
+		<ehcache.version>3.3.1</ehcache.version>
+		<ehcache.core.version>2.6.11</ehcache.core.version>
+		<druid.version>1.1.10</druid.version>
+		<mybatis-plus.version>2.3</mybatis-plus.version>
+		<mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+		<!-- 安全认证框架 -->
+		<shiro.version>1.4.0</shiro.version>
+		<jwt.version>0.9.0</jwt.version>
+		<!-- 验证码组件 -->
+		<kaptcha.version>2.3.2</kaptcha.version>
+		<zxing.version>3.2.1</zxing.version>
+		<!-- 其他依赖 -->
+		<swagger.version>2.9.2</swagger.version>
+		<commons-lang3.version>3.7</commons-lang3.version>
+		<hutool.version>4.1.1</hutool.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- <dependency> -->
+			<!-- <groupId>com.wangang</groupId> -->
+			<!-- <artifactId>eggs-generator</artifactId> -->
+			<!-- <version>${eggs.version}</version> -->
+			<!-- </dependency> -->
+			<dependency>
+				<groupId>com.wangang</groupId>
+				<artifactId>egg-core</artifactId>
+				<version>${eggs.version}</version>
+			</dependency>
+			<!-- spring boot 依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.springframework.boot</groupId> -->
+<!-- 				<artifactId>spring-boot-dependencies</artifactId> -->
+<!-- 				<version>${spring.boot.version}</version> -->
+<!-- 				<type>pom</type> -->
+<!-- 				<scope>import</scope> -->
+<!-- 			</dependency> -->
+
+			<!-- mybatis-plus 依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.baomidou</groupId> -->
+<!-- 				<artifactId>mybatisplus-spring-boot-starter</artifactId> -->
+<!-- 				<version>${mybatisplus-spring-boot-starter.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.baomidou</groupId> -->
+<!-- 				<artifactId>mybatis-plus</artifactId> -->
+<!-- 				<version>${mybatis-plus.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.baomidou</groupId> -->
+<!-- 				<artifactId>mybatis-plus-generate</artifactId> -->
+<!-- 				<version>${mybatis-plus.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- 模板依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.velocity</groupId> -->
+<!-- 				<artifactId>velocity</artifactId> -->
+<!-- 				<version>${velocity.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.ibeetl</groupId> -->
+<!-- 				<artifactId>beetl</artifactId> -->
+<!-- 				<version>${beetl.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!--shiro依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.shiro</groupId> -->
+<!-- 				<artifactId>shiro-core</artifactId> -->
+<!-- 				<version>${shiro.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.shiro</groupId> -->
+<!-- 				<artifactId>shiro-spring</artifactId> -->
+<!-- 				<version>${shiro.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.shiro</groupId> -->
+<!-- 				<artifactId>shiro-ehcache</artifactId> -->
+<!-- 				<version>${shiro.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- json依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.alibaba</groupId> -->
+<!-- 				<artifactId>fastjson</artifactId> -->
+<!-- 				<version>${fastjson.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- druid依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.alibaba</groupId> -->
+<!-- 				<artifactId>druid</artifactId> -->
+<!-- 				<version>${druid.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- 验证码依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.github.penggle</groupId> -->
+<!-- 				<artifactId>kaptcha</artifactId> -->
+<!-- 				<version>${kaptcha.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>com.google.zxing</groupId> -->
+<!-- 				<artifactId>core</artifactId> -->
+<!-- 				<version>${zxing.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- ehchache依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.ehcache</groupId> -->
+<!-- 				<artifactId>ehcache</artifactId> -->
+<!-- 				<version>${ehcache.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>net.sf.ehcache</groupId> -->
+<!-- 				<artifactId>ehcache-core</artifactId> -->
+<!-- 				<version>${ehcache.core.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- mysql 依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>mysql</groupId> -->
+<!-- 				<artifactId>mysql-connector-java</artifactId> -->
+<!-- 				<version>${mysql-connector-java.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- 接口文档 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>io.springfox</groupId> -->
+<!-- 				<artifactId>springfox-swagger2</artifactId> -->
+<!-- 				<version>${swagger.version}</version> -->
+<!-- 			</dependency> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>io.springfox</groupId> -->
+<!-- 				<artifactId>springfox-swagger-ui</artifactId> -->
+<!-- 				<version>${swagger.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- JWT跨域认证依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>io.jsonwebtoken</groupId> -->
+<!-- 				<artifactId>jjwt</artifactId> -->
+<!-- 				<version>${jwt.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- java工具箱 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>cn.hutool</groupId> -->
+<!-- 				<artifactId>hutool-all</artifactId> -->
+<!-- 				<version>${hutool.version}</version> -->
+<!-- 			</dependency> -->
+
+			<!-- 其他依赖 -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.apache.commons</groupId> -->
+<!-- 				<artifactId>commons-lang3</artifactId> -->
+<!-- 				<version>${commons-lang3.version}</version> -->
+<!-- 			</dependency> -->
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<!-- maven插件配置 -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimiter>@</delimiter>
+					</delimiters>
+					<useDefaultDelimiters>false</useDefaultDelimiters>
+				</configuration>
+			</plugin>
+		</plugins>
+		<!-- 自定义maven资源文件处理 -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
+	<!-- profiles配置 -->
+<!-- 	<profiles> -->
+<!-- 		<profile> -->
+<!-- 			<id>local</id> -->
+<!-- 			<properties> -->
+<!-- 				<spring.active>local</spring.active> -->
+<!-- 			</properties> -->
+<!-- 			<activation> -->
+<!-- 				<activeByDefault>true</activeByDefault> -->
+<!-- 			</activation> -->
+<!-- 		</profile> -->
+<!-- 		<profile> -->
+<!-- 			<id>dev</id> -->
+<!-- 			<properties> -->
+<!-- 				<spring.active>dev</spring.active> -->
+<!-- 			</properties> -->
+<!-- 		</profile> -->
+<!-- 		<profile> -->
+<!-- 			<id>test</id> -->
+<!-- 			<properties> -->
+<!-- 				<spring.active>test</spring.active> -->
+<!-- 			</properties> -->
+<!-- 		</profile> -->
+<!-- 		<profile> -->
+<!-- 			<id>produce</id> -->
+<!-- 			<properties> -->
+<!-- 				<spring.active>produce</spring.active> -->
+<!-- 			</properties> -->
+<!-- 		</profile> -->
+<!-- 	</profiles> -->
+
+</project>
