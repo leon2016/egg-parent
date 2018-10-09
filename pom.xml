@@ -63,137 +63,136 @@
 				<version>${eggs.version}</version>
 			</dependency>
 			<!-- spring boot 依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.springframework.boot</groupId> -->
-<!-- 				<artifactId>spring-boot-dependencies</artifactId> -->
-<!-- 				<version>${spring.boot.version}</version> -->
-<!-- 				<type>pom</type> -->
-<!-- 				<scope>import</scope> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.springframework.boot</groupId> -->
+			<!-- <artifactId>spring-boot-dependencies</artifactId> -->
+			<!-- <version>${spring.boot.version}</version> -->
+			<!-- <type>pom</type> -->
+			<!-- <scope>import</scope> -->
+			<!-- </dependency> -->
 
 			<!-- mybatis-plus 依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.baomidou</groupId> -->
-<!-- 				<artifactId>mybatisplus-spring-boot-starter</artifactId> -->
-<!-- 				<version>${mybatisplus-spring-boot-starter.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.baomidou</groupId> -->
-<!-- 				<artifactId>mybatis-plus</artifactId> -->
-<!-- 				<version>${mybatis-plus.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.baomidou</groupId> -->
-<!-- 				<artifactId>mybatis-plus-generate</artifactId> -->
-<!-- 				<version>${mybatis-plus.version}</version> -->
-<!-- 			</dependency> -->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatisplus-spring-boot-starter</artifactId>
+				<version>${mybatisplus-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-generate</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
 
 			<!-- 模板依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.velocity</groupId> -->
-<!-- 				<artifactId>velocity</artifactId> -->
-<!-- 				<version>${velocity.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.ibeetl</groupId> -->
-<!-- 				<artifactId>beetl</artifactId> -->
-<!-- 				<version>${beetl.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.velocity</groupId> -->
+			<!-- <artifactId>velocity</artifactId> -->
+			<!-- <version>${velocity.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.ibeetl</groupId> -->
+			<!-- <artifactId>beetl</artifactId> -->
+			<!-- <version>${beetl.version}</version> -->
+			<!-- </dependency> -->
 
 			<!--shiro依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.shiro</groupId> -->
-<!-- 				<artifactId>shiro-core</artifactId> -->
-<!-- 				<version>${shiro.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.shiro</groupId> -->
-<!-- 				<artifactId>shiro-spring</artifactId> -->
-<!-- 				<version>${shiro.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.shiro</groupId> -->
-<!-- 				<artifactId>shiro-ehcache</artifactId> -->
-<!-- 				<version>${shiro.version}</version> -->
-<!-- 			</dependency> -->
-
-			<!-- json依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.alibaba</groupId> -->
-<!-- 				<artifactId>fastjson</artifactId> -->
-<!-- 				<version>${fastjson.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.shiro</groupId> -->
+			<!-- <artifactId>shiro-core</artifactId> -->
+			<!-- <version>${shiro.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.shiro</groupId> -->
+			<!-- <artifactId>shiro-spring</artifactId> -->
+			<!-- <version>${shiro.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.apache.shiro</groupId> -->
+			<!-- <artifactId>shiro-ehcache</artifactId> -->
+			<!-- <version>${shiro.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- druid依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.alibaba</groupId> -->
-<!-- 				<artifactId>druid</artifactId> -->
-<!-- 				<version>${druid.version}</version> -->
-<!-- 			</dependency> -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
 
 			<!-- 验证码依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.github.penggle</groupId> -->
-<!-- 				<artifactId>kaptcha</artifactId> -->
-<!-- 				<version>${kaptcha.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>com.google.zxing</groupId> -->
-<!-- 				<artifactId>core</artifactId> -->
-<!-- 				<version>${zxing.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.github.penggle</groupId> -->
+			<!-- <artifactId>kaptcha</artifactId> -->
+			<!-- <version>${kaptcha.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>com.google.zxing</groupId> -->
+			<!-- <artifactId>core</artifactId> -->
+			<!-- <version>${zxing.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- ehchache依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.ehcache</groupId> -->
-<!-- 				<artifactId>ehcache</artifactId> -->
-<!-- 				<version>${ehcache.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>net.sf.ehcache</groupId> -->
-<!-- 				<artifactId>ehcache-core</artifactId> -->
-<!-- 				<version>${ehcache.core.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.ehcache</groupId> -->
+			<!-- <artifactId>ehcache</artifactId> -->
+			<!-- <version>${ehcache.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>net.sf.ehcache</groupId> -->
+			<!-- <artifactId>ehcache-core</artifactId> -->
+			<!-- <version>${ehcache.core.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- mysql 依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>mysql</groupId> -->
-<!-- 				<artifactId>mysql-connector-java</artifactId> -->
-<!-- 				<version>${mysql-connector-java.version}</version> -->
-<!-- 			</dependency> -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector-java.version}</version>
+			</dependency>
 
 			<!-- 接口文档 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>io.springfox</groupId> -->
-<!-- 				<artifactId>springfox-swagger2</artifactId> -->
-<!-- 				<version>${swagger.version}</version> -->
-<!-- 			</dependency> -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>io.springfox</groupId> -->
-<!-- 				<artifactId>springfox-swagger-ui</artifactId> -->
-<!-- 				<version>${swagger.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>io.springfox</groupId> -->
+			<!-- <artifactId>springfox-swagger2</artifactId> -->
+			<!-- <version>${swagger.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>io.springfox</groupId> -->
+			<!-- <artifactId>springfox-swagger-ui</artifactId> -->
+			<!-- <version>${swagger.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- JWT跨域认证依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>io.jsonwebtoken</groupId> -->
-<!-- 				<artifactId>jjwt</artifactId> -->
-<!-- 				<version>${jwt.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>io.jsonwebtoken</groupId> -->
+			<!-- <artifactId>jjwt</artifactId> -->
+			<!-- <version>${jwt.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- java工具箱 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>cn.hutool</groupId> -->
-<!-- 				<artifactId>hutool-all</artifactId> -->
-<!-- 				<version>${hutool.version}</version> -->
-<!-- 			</dependency> -->
+			<!-- <dependency> -->
+			<!-- <groupId>cn.hutool</groupId> -->
+			<!-- <artifactId>hutool-all</artifactId> -->
+			<!-- <version>${hutool.version}</version> -->
+			<!-- </dependency> -->
 
 			<!-- 其他依赖 -->
-<!-- 			<dependency> -->
-<!-- 				<groupId>org.apache.commons</groupId> -->
-<!-- 				<artifactId>commons-lang3</artifactId> -->
-<!-- 				<version>${commons-lang3.version}</version> -->
-<!-- 			</dependency> -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
@@ -245,34 +244,34 @@
 	</build>
 
 	<!-- profiles配置 -->
-<!-- 	<profiles> -->
-<!-- 		<profile> -->
-<!-- 			<id>local</id> -->
-<!-- 			<properties> -->
-<!-- 				<spring.active>local</spring.active> -->
-<!-- 			</properties> -->
-<!-- 			<activation> -->
-<!-- 				<activeByDefault>true</activeByDefault> -->
-<!-- 			</activation> -->
-<!-- 		</profile> -->
-<!-- 		<profile> -->
-<!-- 			<id>dev</id> -->
-<!-- 			<properties> -->
-<!-- 				<spring.active>dev</spring.active> -->
-<!-- 			</properties> -->
-<!-- 		</profile> -->
-<!-- 		<profile> -->
-<!-- 			<id>test</id> -->
-<!-- 			<properties> -->
-<!-- 				<spring.active>test</spring.active> -->
-<!-- 			</properties> -->
-<!-- 		</profile> -->
-<!-- 		<profile> -->
-<!-- 			<id>produce</id> -->
-<!-- 			<properties> -->
-<!-- 				<spring.active>produce</spring.active> -->
-<!-- 			</properties> -->
-<!-- 		</profile> -->
-<!-- 	</profiles> -->
+	<!-- <profiles> -->
+	<!-- <profile> -->
+	<!-- <id>local</id> -->
+	<!-- <properties> -->
+	<!-- <spring.active>local</spring.active> -->
+	<!-- </properties> -->
+	<!-- <activation> -->
+	<!-- <activeByDefault>true</activeByDefault> -->
+	<!-- </activation> -->
+	<!-- </profile> -->
+	<!-- <profile> -->
+	<!-- <id>dev</id> -->
+	<!-- <properties> -->
+	<!-- <spring.active>dev</spring.active> -->
+	<!-- </properties> -->
+	<!-- </profile> -->
+	<!-- <profile> -->
+	<!-- <id>test</id> -->
+	<!-- <properties> -->
+	<!-- <spring.active>test</spring.active> -->
+	<!-- </properties> -->
+	<!-- </profile> -->
+	<!-- <profile> -->
+	<!-- <id>produce</id> -->
+	<!-- <properties> -->
+	<!-- <spring.active>produce</spring.active> -->
+	<!-- </properties> -->
+	<!-- </profile> -->
+	<!-- </profiles> -->
 
 </project>
