@@ -1,6 +1,7 @@
 #web容器配置
 server:
-  port: 8080
+  port: 8089
+  #context-path: /egg
 
 #系统设置
 egg:

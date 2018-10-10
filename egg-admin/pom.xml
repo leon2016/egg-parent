@@ -100,20 +100,20 @@
 		<!--</dependency> -->
 
 		<!-- 验证码组件依赖 -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.github.penggle</groupId> -->
-		<!-- <artifactId>kaptcha</artifactId> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.google.zxing</groupId> -->
-		<!-- <artifactId>core</artifactId> -->
-		<!-- </dependency> -->
+		<dependency>
+		<groupId>com.github.penggle</groupId>
+		<artifactId>kaptcha</artifactId>
+		</dependency>
+		<dependency>
+		<groupId>com.google.zxing</groupId>
+		<artifactId>core</artifactId>
+		</dependency>
 
 		<!-- 模板引擎依赖 -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.ibeetl</groupId> -->
-		<!-- <artifactId>beetl</artifactId> -->
-		<!-- </dependency> -->
+		<dependency>
+		<groupId>com.ibeetl</groupId>
+		<artifactId>beetl</artifactId>
+		</dependency>
 
 		<!-- 自动生成接口文档依赖 -->
 		<!-- <dependency> -->
