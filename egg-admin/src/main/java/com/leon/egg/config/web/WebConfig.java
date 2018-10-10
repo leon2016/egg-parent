@@ -1,5 +1,22 @@
 package com.leon.egg.config.web;
 
+import java.util.Arrays;
+import java.util.Properties;
+
+import org.springframework.aop.Advisor;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
+import org.springframework.aop.support.JdkRegexpMethodPointcut;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.context.request.RequestContextListener;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
@@ -11,22 +28,6 @@ import com.leon.egg.config.properties.EggProperties;
 //import com.leon.egg.core.intercept.RestApiInteceptor;
 //import com.leon.egg.core.listener.ConfigListener;
 import com.leon.egg.core.xss.XssFilter;
-import org.springframework.aop.Advisor;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
-import org.springframework.aop.support.JdkRegexpMethodPointcut;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.context.request.RequestContextListener;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import java.util.Arrays;
-import java.util.Properties;
 
 /**
  * web 配置类
@@ -36,7 +37,8 @@ import java.util.Properties;
  *         2018年10月10日
  */
 @Configuration
-public class WebConfig extends WebMvcConfigurerAdapter {
+@EnableWebMvc 
+public class WebConfig extends WebMvcConfigurationSupport {
 
 	@Autowired
 	private EggProperties eggProperties;
@@ -49,6 +51,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		if (eggProperties.getSwaggerOpen()) {
 			registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
 			registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+	        super.addResourceHandlers(registry);
 		}
 	}
 

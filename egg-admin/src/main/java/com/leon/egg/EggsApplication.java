@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.leon.egg.config.properties.BeetlProperties;
 
@@ -30,6 +31,7 @@ public class EggsApplication {
 	private BeetlProperties beetlProperties;
 
 	@RequestMapping("/")
+	@ResponseBody
 	String index() {
 		// return "Hello Spring Boot !";
 		return beetlProperties.getPrefix();
