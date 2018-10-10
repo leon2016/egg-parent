@@ -1,0 +1,158 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "name": "egg.muti-datasource",
+      "type": "com.leon.egg.core.config.properties.MutiDataSourceProperties"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "name": "spring.datasource",
+      "type": "com.leon.egg.core.config.properties.DruidProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": [
+        "dataSourceGuns",
+        "dataSourceBiz"
+      ],
+      "name": "egg.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": "com.mysql.cj.jdbc.Driver",
+      "name": "egg.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": "root",
+      "name": "egg.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/egg1?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
+      "name": "egg.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": "root",
+      "name": "egg.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.MutiDataSourceProperties",
+      "defaultValue": "SELECT 'x'",
+      "name": "egg.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "com.mysql.cj.jdbc.Driver",
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "stat",
+      "name": "spring.datasource.filters",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 2,
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 20,
+      "name": "spring.datasource.max-active",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 20,
+      "name": "spring.datasource.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 60000,
+      "name": "spring.datasource.max-wait",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 300000,
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 1,
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "root",
+      "name": "spring.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": true,
+      "name": "spring.datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": false,
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": false,
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": true,
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": 60000,
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/egg?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
+      "name": "spring.datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "root",
+      "name": "spring.datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.leon.egg.core.config.properties.DruidProperties",
+      "defaultValue": "SELECT 'x'",
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String"
+    }
+  ]
+}

@@ -9,8 +9,8 @@ import java.nio.channels.FileChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.leon.egg.core.base.exception.EggException;
-import com.leon.egg.core.base.exception.EggExceptionEnum;
+import com.leon.egg.core.exception.EggException;
+import com.leon.egg.core.exception.EggExceptionEnum;
 
 public class FileUtil {
 

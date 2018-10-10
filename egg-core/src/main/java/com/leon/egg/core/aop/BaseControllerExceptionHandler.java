@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.leon.egg.core.base.exception.EggException;
-import com.leon.egg.core.base.exception.EggExceptionEnum;
 import com.leon.egg.core.base.tips.ErrorTip;
+import com.leon.egg.core.exception.EggException;
+import com.leon.egg.core.exception.EggExceptionEnum;
 
 /**
  * 全局的的异常拦截器基类（建议分业务模块建立更多的全局异常拦截基类）

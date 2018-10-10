@@ -15,7 +15,7 @@
  */
 package com.leon.egg.core.support.exception;
 
-import com.leon.egg.core.aop.support.StrKit;
+import com.leon.egg.core.support.StrKit;
 
 /**
  * 工具类初始化异常

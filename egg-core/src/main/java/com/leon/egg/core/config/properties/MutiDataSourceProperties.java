@@ -1,5 +1,8 @@
 package com.leon.egg.core.config.properties;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
 import com.alibaba.druid.pool.DruidDataSource;
 
 /**
@@ -9,6 +12,8 @@ import com.alibaba.druid.pool.DruidDataSource;
  *
  *         2018年10月9日
  */
+@Component
+@ConfigurationProperties(prefix = "egg.muti-datasource")
 public class MutiDataSourceProperties {
 
 	private String url = "jdbc:mysql://127.0.0.1:3306/egg1?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull";

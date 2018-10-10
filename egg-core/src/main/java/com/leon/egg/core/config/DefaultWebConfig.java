@@ -13,8 +13,8 @@ import org.springframework.web.bind.support.ConfigurableWebBindingInitializer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 
-import com.leon.egg.core.base.exception.EggException;
-import com.leon.egg.core.base.exception.EggExceptionEnum;
+import com.leon.egg.core.exception.EggException;
+import com.leon.egg.core.exception.EggExceptionEnum;
 import com.leon.egg.core.util.DateUtil;
 
 @Configuration
@@ -22,11 +22,11 @@ public class DefaultWebConfig extends WebMvcConfigurationSupport {
 
 	@Autowired
 	private RequestMappingHandlerAdapter handlerAdapter;
-	//
-	// @Bean("error")
-	// public EggErrorView error() {
-	// return new EggErrorView();
-	// }
+//	
+//	 @Bean("error")
+//	 public EggErrorView error() {
+//	 return new EggErrorView();
+//	 }
 
 	/**
 	 * 注册类型转换器

@@ -32,7 +32,7 @@ import java.util.Map.Entry;
 import java.util.Random;
 import java.util.Set;
 
-import com.leon.egg.core.aop.support.StrKit;
+import com.leon.egg.core.support.StrKit;
 
 /**
  * 高频方法集合类

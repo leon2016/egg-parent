@@ -4,6 +4,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 import java.sql.SQLException;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
 /**
  * 默认的druid配置
  * 
@@ -11,6 +14,8 @@ import java.sql.SQLException;
  *
  *         2018年10月9日
  */
+@Component
+@ConfigurationProperties(prefix = "spring.datasource")
 public class DruidProperties {
 
 	private String url = "jdbc:mysql://127.0.0.1:3306/egg?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull";

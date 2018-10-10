@@ -6,8 +6,8 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSON;
-import com.leon.egg.core.base.exception.EggException;
-import com.leon.egg.core.base.exception.EggExceptionEnum;
+import com.leon.egg.core.exception.EggException;
+import com.leon.egg.core.exception.EggExceptionEnum;
 
 /**
  * 渲染工具类

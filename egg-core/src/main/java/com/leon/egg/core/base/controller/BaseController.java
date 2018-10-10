@@ -13,10 +13,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 import com.baomidou.mybatisplus.plugins.Page;
-import com.leon.egg.core.aop.support.HttpKit;
 import com.leon.egg.core.base.tips.SuccessTip;
 import com.leon.egg.core.base.warpper.BaseControllerWarpper;
 import com.leon.egg.core.page.PageInfoBT;
+import com.leon.egg.core.support.HttpKit;
 import com.leon.egg.core.util.FileUtil;
 
 public class BaseController {

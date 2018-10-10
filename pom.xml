@@ -125,28 +125,28 @@
 			</dependency>
 
 			<!-- 验证码依赖 -->
-			<!-- <dependency> -->
-			<!-- <groupId>com.github.penggle</groupId> -->
-			<!-- <artifactId>kaptcha</artifactId> -->
-			<!-- <version>${kaptcha.version}</version> -->
-			<!-- </dependency> -->
-			<!-- <dependency> -->
-			<!-- <groupId>com.google.zxing</groupId> -->
-			<!-- <artifactId>core</artifactId> -->
-			<!-- <version>${zxing.version}</version> -->
-			<!-- </dependency> -->
+<!-- 			<dependency> -->
+<!-- 			<groupId>com.github.penggle</groupId> -->
+<!-- 			<artifactId>kaptcha</artifactId> -->
+<!-- 			<version>${kaptcha.version}</version> -->
+<!-- 			</dependency> -->
+			<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>${zxing.version}</version>
+			</dependency>
 
 			<!-- ehchache依赖 -->
-			<!-- <dependency> -->
-			<!-- <groupId>org.ehcache</groupId> -->
-			<!-- <artifactId>ehcache</artifactId> -->
-			<!-- <version>${ehcache.version}</version> -->
-			<!-- </dependency> -->
-			<!-- <dependency> -->
-			<!-- <groupId>net.sf.ehcache</groupId> -->
-			<!-- <artifactId>ehcache-core</artifactId> -->
-			<!-- <version>${ehcache.core.version}</version> -->
-			<!-- </dependency> -->
+			<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>${ehcache.version}</version>
+			</dependency>
+			<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>${ehcache.core.version}</version>
+			</dependency>
 
 			<!-- mysql 依赖 -->
 			<dependency>
