@@ -10,7 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.leon.egg.config.properties.BeetlProperties;
-import com.leon.egg.core.config.properties.DruidProperties;
 
 /**
  * SpringBoot方式启动类
