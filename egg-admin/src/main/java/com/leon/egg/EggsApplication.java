@@ -19,29 +19,10 @@ import com.leon.egg.config.properties.BeetlProperties;
  *
  *         2018年10月8日
  */
-// @RestController
-@Controller
-// @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 @SpringBootApplication
 public class EggsApplication {
 
 	private final static Logger logger = LoggerFactory.getLogger(EggsApplication.class);
-
-	@Autowired
-	private BeetlProperties beetlProperties;
-
-	@RequestMapping("/")
-	@ResponseBody
-	String index() {
-		// return "Hello Spring Boot !";
-		return beetlProperties.getPrefix();
-	}
-
-	@RequestMapping("/hello_beetl")
-	public String helloBeetl(Model model) {
-		model.addAttribute("msg", "Hello Beetl !");
-		return "hello_beetl.html";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(EggsApplication.class, args);

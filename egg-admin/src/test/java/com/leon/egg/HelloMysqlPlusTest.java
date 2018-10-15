@@ -12,6 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.leon.egg.modular.system.dao.RelationMapper;
 import com.leon.egg.modular.system.model.Relation;
 
+
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class HelloMysqlPlusTest {

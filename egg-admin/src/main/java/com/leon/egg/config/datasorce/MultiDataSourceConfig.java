@@ -20,12 +20,13 @@ import com.leon.egg.core.mutidatasource.DynamicDataSource;
 import com.leon.egg.core.mutidatasource.aop.MultiSourceExAop;
 
 /**
- * 多数据源配置<br/>
- * <p>
+ * 多数据源配置
+ * 
  * 注：由于引入多数据源，所以让spring事务的aop要在多数据源切换aop的后面
+ * 
+ * @author wangang
  *
- * @author stylefeng
- * @Date 2017/5/20 21:58
+ *         2018年10月12日
  */
 @Configuration
 @ConditionalOnProperty(prefix = "egg.muti-datasource", name = "open", havingValue = "true")

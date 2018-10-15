@@ -207,7 +207,7 @@ CREATE TABLE `sys_notice` (
 -- ----------------------------
 -- Records of sys_notice
 -- ----------------------------
-INSERT INTO `sys_notice` VALUES ('6', '世界', '10', '欢迎使用Guns管理系统', '2017-01-11 08:53:20', '1');
+INSERT INTO `sys_notice` VALUES ('6', '世界', '10', '欢迎使用Egg管理系统', '2017-01-11 08:53:20', '1');
 INSERT INTO `sys_notice` VALUES ('8', '你好', null, '你好', '2017-05-10 19:28:57', '1');
 
 -- ----------------------------

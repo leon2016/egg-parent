@@ -3,11 +3,14 @@ package com.leon.egg.core.common.constant;
 /**
  * 系统常量
  * 
- * @author wangang
+ * @author wangang 在interface里面的变量默认都是public static final
  *
  *         2018年10月10日
  */
 public interface Const {
+	/*************************************************************
+	 * 系统基本配置常量
+	 *************************************************************/
 
 	/**
 	 * 系统默认的管理员密码

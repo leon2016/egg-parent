@@ -85,11 +85,11 @@
 		</dependency>
 		
 		<!-- 读spring配置 -->
-<!-- 		<dependency> -->
-<!-- 		<groupId>org.springframework.boot</groupId> -->
-<!-- 		<artifactId>spring-boot-configuration-processor</artifactId> -->
-<!-- 		<optional>true</optional> -->
-<!-- 		</dependency> -->
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-configuration-processor</artifactId>
+		<optional>true</optional>
+		</dependency>
 
 		<!--验证码插件 -->
 		<dependency>

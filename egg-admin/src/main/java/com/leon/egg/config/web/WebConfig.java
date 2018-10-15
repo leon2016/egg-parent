@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -25,9 +25,11 @@ import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
 import com.leon.egg.config.properties.EggProperties;
+import com.leon.egg.core.listener.ConfigListener;
+import com.leon.egg.core.xss.XssFilter;
+
 //import com.leon.egg.core.intercept.RestApiInteceptor;
 //import com.leon.egg.core.listener.ConfigListener;
-import com.leon.egg.core.xss.XssFilter;
 
 /**
  * web 配置类
@@ -37,8 +39,8 @@ import com.leon.egg.core.xss.XssFilter;
  *         2018年10月10日
  */
 @Configuration
-@EnableWebMvc 
-public class WebConfig extends WebMvcConfigurationSupport {
+@EnableWebMvc
+public class WebConfig implements WebMvcConfigurer {
 
 	@Autowired
 	private EggProperties eggProperties;
@@ -48,10 +50,10 @@ public class WebConfig extends WebMvcConfigurationSupport {
 	 */
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
 		if (eggProperties.getSwaggerOpen()) {
 			registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
 			registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
-	        super.addResourceHandlers(registry);
 		}
 	}
 
@@ -151,11 +153,10 @@ public class WebConfig extends WebMvcConfigurationSupport {
 	/**
 	 * ConfigListener注册
 	 */
-	// @Bean
-	// public ServletListenerRegistrationBean<ConfigListener>
-	// configListenerRegistration() {
-	// return new ServletListenerRegistrationBean<>(new ConfigListener());
-	// }
+	@Bean
+	public ServletListenerRegistrationBean<ConfigListener> configListenerRegistration() {
+		return new ServletListenerRegistrationBean<>(new ConfigListener());
+	}
 
 	/**
 	 * 验证码生成相关
