@@ -6,7 +6,7 @@ server:
 #系统设置
 egg:
   swagger-open: true              #是否开启swagger (true/false)
-  kaptcha-open: false             #是否开启登录时验证码 (true/false)
+  kaptcha-open: true             #是否开启登录时验证码 (true/false)
 #  file-upload-path: d:/tmp       #文件上传目录(不配置的话为java.io.tmpdir目录)
   spring-session-open: false      #是否开启spring session,如果是多机环境需要开启(true/false)
   session-invalidate-time: 1800     #session失效时间(只在单机环境下生效，多机环境在SpringSessionConfig类中配置) 单位：秒
@@ -15,6 +15,9 @@ egg:
 #日志
 log:
   path: egg-logs
+  
+mybatis-plus: 
+  typeAliasesPackage: com.leon.egg.modular.system.model
   
 #spring配置
 spring:
@@ -35,10 +38,6 @@ spring:
     multipart:
       max-request-size: 100MB
       max-file-size: 100MB
-
-#mybatis配置
-mybatis-plus:
-  typeAliasesPackage: com.leon.egg.modular.system.model
 
 ---
 #多数据源情况的配置

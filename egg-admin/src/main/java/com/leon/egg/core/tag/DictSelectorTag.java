@@ -29,6 +29,7 @@ public class DictSelectorTag extends Tag {
 	@Autowired
 	IDictService iDictService;
 
+	@SuppressWarnings("rawtypes")
 	@Override
 	public void render() {
 		// String tagName = (String) this.args[0];

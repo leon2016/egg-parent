@@ -1,0 +1,6 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.leon.egg.core.base.controller.GlobalController,\
+com.leon.egg.core.config.DefaultFastjsonConfig,\
+com.leon.egg.core.config.DefaultProperties,\
+com.leon.egg.core.config.DefaultWebConfig

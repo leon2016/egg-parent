@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.support.GenericConversionService;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.support.ConfigurableWebBindingInitializer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 
+import com.leon.egg.core.base.controller.EggErrorView;
 import com.leon.egg.core.exception.EggException;
 import com.leon.egg.core.exception.EggExceptionEnum;
 import com.leon.egg.core.util.DateUtil;
@@ -22,11 +24,11 @@ public class DefaultWebConfig extends WebMvcConfigurationSupport {
 
 	@Autowired
 	private RequestMappingHandlerAdapter handlerAdapter;
-//	
-//	 @Bean("error")
-//	 public EggErrorView error() {
-//	 return new EggErrorView();
-//	 }
+	
+	 @Bean("error")
+	 public EggErrorView error() {
+	 return new EggErrorView();
+	 }
 
 	/**
 	 * 注册类型转换器

@@ -8,4 +8,9 @@ package com.leon.egg.core.common.exception;
  *         2018年10月10日
  */
 public class InvalidKaptchaException extends RuntimeException {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5311980521643541997L;
 }

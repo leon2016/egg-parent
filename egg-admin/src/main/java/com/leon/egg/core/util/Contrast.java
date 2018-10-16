@@ -173,9 +173,11 @@ public class Contrast {
 
 	/**
 	 * 解析多个key(逗号隔开的)
-	 *
-	 * @author stylefeng
-	 * @Date 2017/5/16 22:19
+	 * 
+	 * @param dictMap
+	 * @param key
+	 * @param requests
+	 * @return
 	 */
 	public static String parseMutiKey(AbstractDictMap dictMap, String key, Map<String, String> requests) {
 		StringBuilder sb = new StringBuilder();

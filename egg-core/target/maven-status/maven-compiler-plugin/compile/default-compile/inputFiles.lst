@@ -44,6 +44,7 @@
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/config/DefaultWebConfig.java
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/config/DefaultFastjsonConfig.java
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/datascope/DataScope.java
+/Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/config/DefaultProperties.java
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/cache/EhcacheFactory.java
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/base/controller/EggErrorView.java
 /Users/leon/workspace/etpsYunSpace/egg-parent/egg-core/src/main/java/com/leon/egg/core/cache/BaseCacheFactory.java

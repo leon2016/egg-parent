@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.stylefeng.guns.modular.system.dao.DeptMapper">
+<mapper namespace="com.leon.egg.modular.system.dao.DeptMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.Dept">
+    <resultMap id="BaseResultMap" type="com.leon.egg.modular.system.model.Dept">
         <id column="id" property="id"/>
         <result column="num" property="num"/>
         <result column="pid" property="pid"/>
@@ -14,7 +14,7 @@
         <result column="version" property="version"/>
     </resultMap>
 
-    <select id="tree" resultType="com.stylefeng.guns.core.node.ZTreeNode">
+    <select id="tree" resultType="com.leon.egg.core.node.ZTreeNode">
 		select id,pid as pId,simplename as name,
 		(
 		CASE
